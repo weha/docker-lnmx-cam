@@ -7,9 +7,9 @@ RUN echo '*** Downloading...' \
 	&& export GOPATH=`pwd` \
 	&& echo '*** Building...' \
 	&& go build cam \
-	&& echo '*** Done' \
+	&& echo '*** Done'
 
-## Mount path /cam/settings.json for configuration
+## Mount path /cam/config.json for configuration
 ## See https://github.com/lnmx/cam for options
 
 CMD ./cam
