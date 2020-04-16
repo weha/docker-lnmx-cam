@@ -7,6 +7,7 @@ RUN echo '*** Downloading...' \
 	&& export GOPATH=`pwd` \
 	&& echo '*** Building...' \
 	&& go build cam \
+	&& chmod +x cam \
 	&& echo '*** Done'
 
 ## Mount path /cam/config.json for configuration
