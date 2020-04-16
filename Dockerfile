@@ -1,4 +1,4 @@
-FROM golang:1.14-nanoserver
+FROM golang:1.14
 MAINTAINER Wesley Haegens
 
 RUN echo '*** Downloading...' \
