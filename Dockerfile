@@ -8,10 +8,12 @@ RUN echo '*** Downloading...' \
 	&& export GOPATH=`pwd` \
 	&& echo '*** Building...' \
 	&& go build cam \
-	&& chmod +x cam \
+	&& ls -aslh \
+	&& chmod 744 cam \
+	&& ls -aslh \
 	&& echo '*** Done'
 
 ## Mount path /cam/config.json for configuration
 ## See https://github.com/lnmx/cam for options
 
-CMD ./cam
+CMD pwd && cd /go/cam/ && ls -aslh && ./cam
