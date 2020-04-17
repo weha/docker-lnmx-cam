@@ -14,4 +14,4 @@ RUN echo '*** Downloading...' \
 ## See https://github.com/lnmx/cam for options
 
 WORKDIR /cam/
-CMD top
+CMD cd /cam/ && ./cam
