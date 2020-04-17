@@ -13,4 +13,5 @@ RUN echo '*** Downloading...' \
 ## Mount path /cam/config.json for configuration
 ## See https://github.com/lnmx/cam for options
 
-CMD ./cam
+WORKDIR /cam/
+CMD top
