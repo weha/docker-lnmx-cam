@@ -4,6 +4,7 @@ MAINTAINER Wesley Haegens
 RUN echo '*** Downloading...' \
 	&& git clone https://github.com/lnmx/cam \
 	&& cd cam \
+	&& pwd \
 	&& export GOPATH=`pwd` \
 	&& echo '*** Building...' \
 	&& go build cam \
@@ -13,4 +14,4 @@ RUN echo '*** Downloading...' \
 ## Mount path /cam/config.json for configuration
 ## See https://github.com/lnmx/cam for options
 
-CMD cd ~/cam/ && ./cam
+CMD ./cam
